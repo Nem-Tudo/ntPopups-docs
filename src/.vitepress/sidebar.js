@@ -1,7 +1,6 @@
 export default {
   '/': [
-    { text: 'ntPopups', link: '/' },
-    { text: 'Features', link: '/features/' },
+    { text: 'Overview', link: '/' },
     { text: 'Installation', link: '/installation/' },
     {
       text: 'Initial Setup',
