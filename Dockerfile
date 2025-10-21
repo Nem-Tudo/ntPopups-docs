@@ -22,4 +22,4 @@ COPY --from=builder /app/.vitepress/dist ./dist
 
 EXPOSE 55005
 
-CMD ["serve", "-s", "dist", "-l", "55004"]
+CMD ["serve", "-s", "dist", "-l", "55005"]
