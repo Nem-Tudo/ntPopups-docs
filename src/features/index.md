@@ -5,7 +5,7 @@ order: 2
 
 # Features
 
-- 🎨 **Themes** - Support for light and dark themes
+- 🎨 **Themes** - Support for light and dark (and custom themes!)
 - 🌍 **Internationalization** - Support for multiple languages (EN, PTBR)
 - 📱 **Responsive** - Works perfectly on mobile and desktop
 - 🎭 **Ready-to-Use Popups** - Various popups ready to use
