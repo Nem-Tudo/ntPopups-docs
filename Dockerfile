@@ -3,28 +3,23 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Copiar arquivos de dependências
 COPY package*.json ./
-
-# Instalar dependências
 RUN npm ci
 
-# Copiar código fonte
 COPY . .
-
-# Build do VitePress
 RUN npm run docs:build
 
-# Estágio de produção
-FROM nginx:alpine
+# Estágio de produção (só o necessário)
+FROM node:18-alpine
 
-# Copiar build do VitePress para o nginx
-COPY --from=builder /app/.vitepress/dist /usr/share/nginx/html
+WORKDIR /app
 
-# Copiar configuração customizada do nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Instalar apenas o serve
+RUN npm install -g serve
 
-# Expor porta 55004
+# Copiar APENAS o build (não copia node_modules nem código fonte)
+COPY --from=builder /app/.vitepress/dist ./dist
+
 EXPOSE 55004
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["serve", "-s", "dist", "-l", "55004"]
