@@ -20,6 +20,6 @@ RUN npm install -g serve
 # Copiar APENAS o build (não copia node_modules nem código fonte)
 COPY --from=builder /app/.vitepress/dist ./dist
 
-EXPOSE 55004
+EXPOSE 55005
 
 CMD ["serve", "-s", "dist", "-l", "55004"]
