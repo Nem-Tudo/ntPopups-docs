@@ -4,7 +4,7 @@ import sidebar from '../src/.vitepress/sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: "/docs/",
+  base: "/docs/",
   srcDir: './src',
   title: "ntPopups",
   description: "ntPopups documentation",
