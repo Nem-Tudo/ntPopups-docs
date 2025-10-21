@@ -61,7 +61,7 @@ const advancedForm = () => {
           }
         ]
       ],
-      onResponse: async (data) => {
+      onSubmit: async (data) => {
         try {
           await api.post('/create-account', data);
           

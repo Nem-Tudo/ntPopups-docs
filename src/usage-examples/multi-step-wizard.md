@@ -104,7 +104,7 @@ const registrationWizard = () => {
         ...config,
         icon: '📝',
         doneLabel: step === 'preferences' ? 'Finish' : 'Next',
-        onResponse: (values) => {
+        onSubmit: (values) => {
           data = { ...data, ...values };
           
           if (step === 'preferences') {

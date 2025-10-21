@@ -61,8 +61,19 @@ openPopup('form', {
         }
       ]
     ],
-    onResponse: (values) => {
+    onSubmit: (values) => {
       console.log('Form data:', values);
+    },
+    onChange: ({ changedComponentState, formState }) => {
+      const { id, value, isValid } = changedComponentState;
+      const { values, idValid} = formState;
+      
+      console.log('Changed component:', id);
+      console.log('New value:', value);
+      console.log('New value is valid:', isValid);
+
+      console.log('Current form values:', values);
+      console.log('Current form values is valid:', values);
     }
   }
 });
@@ -74,7 +85,8 @@ openPopup('form', {
 - `doneLabel` (ReactNode): Submit button text
 - `icon` (ReactNode): Header icon
 - `components` (Array): List of form components
-- `onResponse` (Function): Callback with object containing all values
+- `onSubmit` (Function): Callback with object containing all values
+- `onChange` (Function): Event fired when any information changes
 
 ### Text Input Component
 

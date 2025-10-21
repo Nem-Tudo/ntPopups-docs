@@ -52,7 +52,7 @@ const openFeedbackForm = () => {
           defaultValue: true
         }
       ],
-      onResponse: async (data) => {
+      onSubmit: async (data) => {
         await api.post('/feedback', data);
         
         openPopup('generic', {

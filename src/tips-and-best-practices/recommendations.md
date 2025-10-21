@@ -7,7 +7,7 @@ title: Recommendations
 **Async Callbacks** - Always handle errors in async operations
 
 ```jsx
-onResponse: async (data) => {
+onSubmit: async (data) => {
   try {
     await saveData(data);
   } catch (error) {
