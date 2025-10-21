@@ -12,7 +12,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Live examples', link: 'https://ntpopups.nemtudo.me' },
+      { text: 'Demo examples', link: 'https://ntpopups.nemtudo.me/demo' },
     ],
 
     sidebar: sidebar,
