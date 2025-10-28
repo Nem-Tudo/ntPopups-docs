@@ -35,8 +35,8 @@ openPopup('form', {
 | `message` | ReactNode | Optional description |
 | `doneLabel` | ReactNode | Submit button text |
 | `icon` | ReactNode | Header icon |
-| `components` | Array | List of form fields (see [Field Types](/native-popups/form/field-types/text)) |
+| `components` | Array | List of form fields (see [Field Types](/native-popups/form/fields/)) |
 | `onSubmit` | `(values: object) => void` | Callback with all form values |
 | `onChange` | `(event: object) => void` | Fired when any field changes |
 
-To see all available input types, navigate to [Field Types](/native-popups/form/field-types/text). To learn how to add your own inputs, see [Custom Form Components](/native-popups/form-custom-components).
+To see all available input types, navigate to [Field Types](/native-popups/form/fields/). To learn how to add your own inputs, see [Custom Form Components](/native-popups/form-custom-components).

@@ -4,12 +4,7 @@
 
 Create elegant, fully customizable, and responsive popups with theme support, internationalization, and custom components—all in a simple yet powerful way.
 
-[![npm version](https://img.shields.io/npm/v/ntpopups.svg)](https://www.npmjs.com/package/ntpopups)
-[![License](https://img.shields.io/npm/l/ntpopups.svg)](https://github.com/Nem-Tudo/ntpopups/blob/main/LICENSE)
-
 **[Live Demo](https://ntpopups.nemtudo.me/demo) • [Full Documentation](https://ntpopups.nemtudo.me) • [GitHub](https://github.com/Nem-Tudo/ntPopups)**
-
----
 
 ## ✨ Features
 
